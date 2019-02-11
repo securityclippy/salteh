@@ -30,4 +30,7 @@ cairo-dock-plugins:
   pkg.installed:
     - name: cairo-dock-plug-ins
     - repository: ppa:cairo-dock-team/ppa
-
+install-golang:
+   cmd.run:
+    - name: {{ salt['environ.get']('HOME') }}/salteh/scripts/install-golang.sh
+    #- name: /home/clippy/salteh/scripts/install-golang.sh
