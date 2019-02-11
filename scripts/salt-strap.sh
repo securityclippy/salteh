@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 
-sudo apt-get install curl -y
-
 curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
 sudo sh bootstrap_salt.sh
 
