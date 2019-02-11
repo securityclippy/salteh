@@ -33,4 +33,6 @@ cairo-dock-plugins:
 install-golang:
    cmd.run:
     - name: {{ salt['environ.get']('HOME') }}/salteh/scripts/install-golang.sh
-    #- name: /home/clippy/salteh/scripts/install-golang.sh
+install-goland:
+  cmd.run:
+    - name: {{ salt['environ.get']('HOME') }}/salteh/scripts/goland.sh
