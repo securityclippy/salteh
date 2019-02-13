@@ -6,5 +6,5 @@ setup:
 
 applystate:
 	sudo cp salt-states/* /srv/salt/
-	sudo salt-call --local state.apply
+	sudo salt-call --local state.apply -l info
 	
