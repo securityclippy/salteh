@@ -45,3 +45,6 @@ omyzsh:
 pip:
   pkg.installed:
     - name: python3-pip
+aws-vault:
+  cmd.run:
+    - name: go get github.com/99designs/aws-vault
