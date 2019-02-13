@@ -36,3 +36,9 @@ install-golang:
 install-goland:
   cmd.run:
     - name: {{ salt['environ.get']('HOME') }}/salteh/scripts/goland.sh
+zsh:
+  pkg.installed:
+    - name: zsh
+omyzsh:
+  cmd.run:
+    - name: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
