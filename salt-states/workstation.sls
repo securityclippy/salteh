@@ -48,3 +48,7 @@ pip:
 aws-vault:
   cmd.run:
     - name: go get github.com/99designs/aws-vault
+go-meta-linter:
+  cmd.run:
+    - name: curl -L https://git.io/vp6lP | sh
+
