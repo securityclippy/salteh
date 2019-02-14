@@ -45,10 +45,16 @@ omyzsh:
 pip:
   pkg.installed:
     - name: python3-pip
+zshconfig1:
+  cmd.run:
+    - name: cp {{ salt['environ.get']('HOME') }}/salteh/.zshrc {{ salt['environ.get']('HOME') }}/.zshrc
+sourcezsh:
+  cmd.run:
+    - name: source {{ salt['environ.get']('HOME') }}/.zshrc
 aws-vault:
   cmd.run:
     - name: go get github.com/99designs/aws-vault
 go-meta-linter:
   cmd.run:
-    - name: curl -L https://git.io/vp6lP | sh
+    - name: {{ salt['environ.get']('HOME') }}/salteh/scripts/golmetalinter-install.sh
 

@@ -10,5 +10,3 @@ cairoconfig:
 python3default:
   cmd.run:
     - name: sudo rm /usr/bin/python && sudo ln -s /usr/bin/python3 /usr/bin/python
-
-
