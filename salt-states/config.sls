@@ -2,6 +2,9 @@
 zshconfig:
   cmd.run:
     - name: cp {{ salt['environ.get']('HOME') }}/salteh/.zshrc {{ salt['environ.get']('HOME') }}/.zshrc
+setshell:
+  cmd.run:
+    - name: usermod -s /bin/zsh {{ salt['environ.get']('USER') }}
 #config cairodock
 cairoconfig:
   cmd.run:
