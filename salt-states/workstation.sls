@@ -56,5 +56,5 @@ aws-vault:
     - name: go get github.com/99designs/aws-vault
 go-meta-linter:
   cmd.run:
-    - name: {{ salt['environ.get']('HOME') }}/salteh/scripts/golmetalinter-install.sh
+    - name: {{ salt['environ.get']('HOME') }}/salteh/scripts/gometalinter-install.sh
 
